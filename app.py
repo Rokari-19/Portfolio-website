@@ -46,8 +46,9 @@ def index():
      )
 
 
-@app.route('/jobs')
+@app.route('/api/jobs')
 def list_jobs():
+    return jsonify(JOBS)
 
 
 
