@@ -1,0 +1,29 @@
+<div class="row">
+    <div class=" col border-bottom border-dark" style="margin-bottom: 16px; padding-bottom: 8px;">
+        <h4 style="margin-bottom: 0px; color: rgb(120, 120, 120);">
+            {{job['title']}}
+        </h4>
+        <div style="margin-bottom: 0px; margin-top: 0%;">
+            <b>
+            Location: {{job['location']}}
+            </b>
+        </div>
+        {% if 'salary' in job %}
+        <div style=" margin-top: 0px;">
+            <b>
+            Their Salary: {{job['salary']}}
+            </b>
+        </div>
+        {% endif %}
+        <div style=" margin-top: 0px;">
+            <b>
+            Member: {{job['member']}}
+            </b>
+        </div>
+    </div>
+    <div class="col-1 border-bottom border-dark" style="margin-bottom: 16px;">
+        <form action= {{job['github']}}>
+            <button type="submit" class="btn btn-outline-dark">See Github</button>
+        </form>
+    </div>
+</div>

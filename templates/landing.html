@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Flask App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark-subtle">
+    <div class="container bg-secondary border-primary rounded-4">
+      <h1 class="text-center mt-2 mb-4 p-3">
+        Bingham university's {{company_name}}
+      </h1>
+      <img
+        id="banner"
+        class="img-fluid rounded-5 p-3"
+        src="https://images.unsplash.com/photo-1483817101829-339b08e8d83f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=804&q=80"
+        alt="a picture of apple's iphone xs max"
+      />
+      <h2>about the code crusaders</h2>
+      <p class="lead text-light">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Eget mi proin sed
+        libero. Vel orci porta non pulvinar neque laoreet suspendisse. Sapien
+        pellentesque habitant morbi tristique senectus et netus et malesuada. Eu
+        non diam phasellus vestibulum lorem sed risus. Purus sit amet luctus
+        venenatis lectus. Velit scelerisque in dictum non consectetur a erat.
+        Magna etiam tempor orci eu lobortis elementum nibh. Platea dictumst
+        quisque sagittis purus. Viverra mauris in aliquam sem fringilla ut morbi
+        tincidunt. Dolor sit amet consectetur adipiscing. Morbi blandit cursus
+        risus at ultrices. Ullamcorper a lacus vestibulum sed arcu non odio
+        euismod. Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra
+        justo. Facilisi etiam dignissim diam quis enim lobortis scelerisque.
+        Augue neque gravida in fermentum et.
+      </p>
+      <h1 class="ms-4">Member Positions</h1>
+      <div class="bg-dark-subtle rounded-5 m-4 mt-4 mb-2 p-4">
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
+      <h2 class="text-center mt-2 mb-4">Their acheivements</h2>
+      <!-- <p>TODO - Show acheivements</p> -->
+      <br />
+      <br />
+      <div class="container row">
+        <div class="col-md-4">
+          <img
+            class="img-fluid rounded-5 p-3"
+            src="https://i.ibb.co/Bt9VTjJ/IMG-20230615-124400-695.jpg"
+            alt="IMG-20230615-124400-695"
+          />
+        </div>
+        <div class="col p-4 bg-dark-subtle rounded-5 ms-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mi
+          proin sed libero. Vel orci porta non pulvinar neque laoreet
+          suspendisse. Sapien pellentesque habitant morbi tristique senectus et
+          netus et malesuada. Eu non diam phasellus vestibulum lorem sed risus.
+          Purus sit amet luctus venenatis lectus. Velit scelerisque in dictum
+          non consectetur a erat. Magna etiam tempor orci eu lobortis elementum
+          nibh. Platea dictumst quisque sagittis purus. Viverra mauris in
+          aliquam sem fringilla ut morbi tincidunt. Dolor sit amet consectetur
+          adipiscing. Morbi blandit cursus risus at ultrices. Ullamcorper a
+          lacus vestibulum sed arcu non odio euismod. Proin sagittis nisl
+          rhoncus mattis rhoncus urna neque viverra justo. Facilisi etiam
+          dignissim diam quis enim lobortis scelerisque. Augue neque gravida in
+          fermentum et.
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col p-4 bg-dark-subtle rounded-5 ms-3 me-3">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget mi
+          proin sed libero. Vel orci porta non pulvinar neque laoreet
+          suspendisse. Sapien pellentesque habitant morbi tristique senectus et
+          netus et malesuada. Eu non diam phasellus vestibulum lorem sed risus.
+          Purus sit amet luctus venenatis lectus. Velit scelerisque in dictum
+          non consectetur a erat. Magna etiam tempor orci eu lobortis elementum
+          nibh. Platea dictumst quisque sagittis purus. Viverra mauris in
+          aliquam sem fringilla ut morbi tincidunt. Dolor sit amet consectetur
+          adipiscing. Morbi blandit cursus risus at ultrices. Ullamcorper a
+          lacus vestibulum sed arcu non odio euismod. Proin sagittis nisl
+          rhoncus mattis rhoncus urna neque viverra justo. Facilisi etiam
+          dignissim diam quis enim lobortis scelerisque. Augue neque gravida in
+          fermentum et.
+        </div>
+        <div class="col-md-4">
+          <img
+            class="img-fluid rounded-5 p-3"
+            src="https://i.ibb.co/wWb6FBK/77de1ecfd5b88b52f9c919e2a0504070.webp"
+            alt="77de1ecfd5b88b52f9c919e2a0504070"
+          />
+        </div>
+      </div>
+      <!-- <h2 class="text-center mt-3">Meet the Team</h2> -->
+      <!-- <div class="row">
+        <div class="col-md-4 rounded-5 p-4 ms-4">
+          <img
+            class="img-fluid rounded-5 "
+            src="https://i.ibb.co/vPHBM9Q/IMG-20230803-WA0016.jpg"
+            alt="IMG-20230803-WA0016"
+          />
+        </div>
+      </div> -->
+
+      <form
+        action="https://github.com/Code-Crusaders-final-project/CMP-114-Project.git"
+      >
+        <div class="text-center">
+          <button type="submit" class="btn btn-dark mb-4 mt-4">
+            see projects on Github
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="container text-center">
+      <p class="signature mt-4">
+        copyright 2023,
+        <a href="https://github.com/rokarioss">Rokari builds</a>, code crusaders
+      </p>
+    </div>
+  </body>
+</html>
