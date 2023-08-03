@@ -7,7 +7,7 @@ JOBS = [
         'id':1, 
         'title':'Backend developer',
         'location':'Abuja, Nigeria',
-        'salary':'n1000000',
+        'Wages/Hour':'negotiable',
         'member': 'Ajiri "rokari" iyelobu',
         'github': 'https://github.com/rokarioss'
     }, 
@@ -15,14 +15,14 @@ JOBS = [
         'id':2, 
         'title':'Data Scientist',
         'location':'Abuja, Nigeria',
-        'salary':'n1000000',
+        'Wages/Hour':'negotiable',
         'member': 'anosike ugochukwu'
     },
     {
         'id':3, 
         'title':'Front End Engineer',
         'location':'Uke, Nigeria',
-        'salary':'n1000000',
+        'Wages/Hour':'negotiable',
         'member': 'Daniel "kng-koder" fori',
         'github': 'https://github.com/DFori'
 
@@ -31,7 +31,7 @@ JOBS = [
         'id':4, 
         'title':'Fullstack Developer',
         'location':'remote',
-        'salary':'$200000',
+        'Wages/Hour':'negotiable',
         'member': 'Aigbona Benjamin "bencool"',
         'github':'https://github.com/aigbonabenjamin'
     }
