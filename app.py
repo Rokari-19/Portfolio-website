@@ -73,6 +73,10 @@ def index():
 def list_jobs():
     return jsonify(JOBS)
 
+@app.route('/api/services')
+def list_services():
+    return jsonify(SERV)
+
 
 
 if __name__ == '__main__':
