@@ -44,19 +44,19 @@ SERV = [
         'id':1,
         'title':'Website development',
         'price':'Negotiable',
-        'duration':'depends'
+        'duration':'Depending on customer terms'
     },
     {
         'id':2,
-        'title':'Website development',
+        'title':'Back-end data-base management',
         'price':'Negotiable',
-        'duration':'depends'
+        'duration':'Depending on payment'
     },
     {
         'id':3,
-        'title':'Website development',
+        'title':'Cyber Security & IT-support services',
         'price':'Negotiable',
-        'duration':'depends'
+        'duration':'Depends on price'
     }
 ]
 @app.route('/')
