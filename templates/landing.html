@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test Flask App</title>
+    <title>Code-Crusaders.com</title>
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='cs-logo.ico') }}"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,7 +26,7 @@
         src="https://images.unsplash.com/photo-1483817101829-339b08e8d83f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=804&q=80"
         alt="a picture of apple's iphone xs max"
       />
-      <h2>about the code crusaders</h2>
+      <h2>About the code crusaders</h2>
       <p class="lead text-light">
         The Code Crusaders are a dynamic and tightly-knit programming team,
         consisting of innovative and passionate individuals with a shared
@@ -37,7 +41,7 @@
         indelible mark on the world of coding and inspiring future generations
         of programmers.
       </p>
-      <h1 class="ms-4">Member Positions</h1>
+      <h1 class="text-center">Member Positions</h1>
       <div class="bg-dark-subtle rounded-5 m-4 mt-4 mb-2 p-4">
         {% for job in jobs %} {% include 'jobitem.html' %} {% endfor %}
       </div>
@@ -70,7 +74,7 @@
       </div>
       <br />
       <div class="row">
-        <div class="col p-4 bg-dark-subtle rounded-5 ms-3 me-3">
+        <div class="col p-4 bg-dark-subtle rounded-5 mx-4">
           The Code Crusaders achieved remarkable breakthroughs in the realm of
           cybersecurity, revolutionizing the industry with their cutting-edge
           innovations and unwavering dedication. Through meticulous research and
@@ -95,17 +99,10 @@
           />
         </div>
       </div>
-      <!-- <h2 class="text-center mt-3">Meet the Team</h2> -->
-      <!-- <div class="row">
-        <div class="col-md-4 rounded-5 p-4 ms-4">
-          <img
-            class="img-fluid rounded-5 "
-            src="https://i.ibb.co/vPHBM9Q/IMG-20230803-WA0016.jpg"
-            alt="IMG-20230803-WA0016"
-          />
-        </div>
-      </div> -->
-
+      <h2 class="ms-3">Our Services:</h2>
+      <div class="container bg-dark-subtle rounded-5 mt-4 pb-2 pt-2">
+        {% for item in services %} {% include 'services.html' %} {% endfor %}
+      </div>
       <form
         action="https://github.com/Code-Crusaders-final-project/CMP-114-Project.git"
       >

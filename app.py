@@ -2,6 +2,7 @@ from flask import Flask, render_template, url_for, jsonify
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+
 JOBS = [
     {
         'id':1, 
@@ -37,12 +38,34 @@ JOBS = [
     }
     
 ]
+
+SERV = [
+    {
+        'id':1,
+        'title':'Website development',
+        'price':'Negotiable',
+        'duration':'depends'
+    },
+    {
+        'id':2,
+        'title':'Website development',
+        'price':'Negotiable',
+        'duration':'depends'
+    },
+    {
+        'id':3,
+        'title':'Website development',
+        'price':'Negotiable',
+        'duration':'depends'
+    }
+]
 @app.route('/')
 
 def index():
     return render_template('landing.html',
      jobs= JOBS,
-     company_name= 'Code-crusaders'
+     company_name= 'Code-crusaders',
+     services= SERV
      )
 
 

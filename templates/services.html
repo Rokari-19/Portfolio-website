@@ -1,0 +1,13 @@
+<div class="border-bottom border-dark mx-2 mb-2">
+  <div style="margin-bottom: 0px; color: black">
+    <strong>{{item['title']}}</strong>
+  </div>
+  <div style="margin-bottom: 0px; margin-top: 0%">
+    <b> Price: {{item['price']}} </b>
+  </div>
+  {% if 'id' in item %}
+  <div class="" style="margin-top: 0px">
+    <b> Duration: {{item['duration']}} </b>
+  </div>
+  {% endif %}
+</div>
