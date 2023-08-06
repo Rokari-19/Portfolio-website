@@ -6,7 +6,7 @@
     <title>Code-Crusaders.com</title>
     <link
       rel="shortcut icon"
-      href="{{ url_for('static', filename='cs-logo.ico') }}" 
+      href="{{ url_for('static', filename='cs-logo.ico') }}"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -16,18 +16,18 @@
     />
   </head>
   <body class="bg-dark-subtle">
+    {% include 'nav.html' %}
     <div class="container bg-secondary border-primary rounded-4">
-      <h1 class="text-center mt-2 mb-4 p-3">
-        Bingham university's {{company_name}}
-      </h1>
+      <h1 class="text-start mt-2 mb-2 p-3">The {{company_name}}</h1>
       <img
         id="banner"
-        class="img-fluid rounded-5 p-3"
-        src="https://images.unsplash.com/photo-1483817101829-339b08e8d83f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=804&q=80"
+        class="text-center img-fluid rounded-5 p-3"
+        src="static/cs-logo.ico"
+        style="max-height: 450px"
         alt="a picture of apple's iphone xs max"
       />
-      <h2>About the code crusaders</h2>
-      <p class="lead text-light">
+      <h2 class="ms-4">About the {{company_name}}</h2>
+      <p class="lead text-light mx-4">
         The Code Crusaders are a dynamic and tightly-knit programming team,
         consisting of innovative and passionate individuals with a shared
         mission to conquer the realm of software development. Armed with a
@@ -59,17 +59,17 @@
         </div>
         <div class="col p-4 bg-dark-subtle rounded-5 ms-4">
           In an intense and fast-paced 7-hour hackathon, the Code Crusaders
-          proved their mettle as agile problem solvers, clinching the top spot
-          and a coveted prize of 50 thousand naira. Fueled by their passion for
-          innovation, the team brainstormed, coded, and iterated relentlessly to
-          develop a revolutionary mobile app that addressed a pressing societal
-          challenge: food waste reduction. Leveraging AI algorithms, the app
-          intelligently matched surplus food from restaurants and events with
-          nearby food banks and shelters, reducing wastage and bridging the gap
-          between surplus and hunger. Their seamless execution, effective
-          communication, and laser-focused teamwork enabled the Code Crusaders
-          to shine amidst fierce competition, leaving a lasting impact on both
-          the hackathon community and the greater community they aimed to serve.
+          proved their mettle as agile problem solvers, clinching the top spot.
+          Fueled by their passion for innovation, the team brainstormed, coded,
+          and iterated relentlessly to develop a revolutionary mobile app that
+          addressed a pressing societal challenge: food waste reduction.
+          Leveraging AI algorithms, the app intelligently matched surplus food
+          from restaurants and events with nearby food banks and shelters,
+          reducing wastage and bridging the gap between surplus and hunger.
+          Their seamless execution, effective communication, and laser-focused
+          teamwork enabled the Code Crusaders to shine amidst fierce
+          competition, leaving a lasting impact on both the hackathon community
+          and the greater community they aimed to serve.
         </div>
       </div>
       <br />
@@ -113,11 +113,6 @@
         </div>
       </form>
     </div>
-    <div class="container text-center">
-      <p class="signature mt-4">
-        copyright 2023,
-        <a href="https://github.com/rokarioss">Rokari builds</a>, code crusaders
-      </p>
-    </div>
+    {% include 'footer.html' %}
   </body>
 </html>
