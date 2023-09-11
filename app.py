@@ -67,6 +67,9 @@ def index():
      company_name= 'Code-crusaders',
      services= SERV
      )
+@app.route('/api')
+def api_call():
+    return 'this is the api webpage'
 
 
 @app.route('/api/jobs')
